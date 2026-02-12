@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './PalleteApp.css';
+import Button from './Button';
 
 export default function PalleteApp() {
   const [count, setCount] = useState(0);
@@ -43,24 +44,24 @@ export default function PalleteApp() {
         </div>
 
         <div className="button-group">
-          <button 
+          <Button 
             className="btn btn-decrement"
             onClick={handleDecrement}
           >
             − Decrease
-          </button>
-          <button 
+          </Button>
+          <Button 
             className="btn btn-reset"
             onClick={handleReset}
           >
             Reset
-          </button>
-          <button 
+          </Button>
+          <Button 
             className="btn btn-increment"
             onClick={handleIncrement}
           >
             Increase +
-          </button>
+          </Button>
         </div>
 
         <div className="color-info">
