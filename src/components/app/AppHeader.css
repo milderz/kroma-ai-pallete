@@ -1,0 +1,20 @@
+.app-header {
+    
+    height: 6.2rem;
+    width: 100%;
+    border-bottom: 1px solid #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.app-header-title {
+    font-size: 1.8rem;
+}
