@@ -1,3 +1,8 @@
+---
+// Supports weights 100-900
+import "@fontsource-variable/inter";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,7 +10,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<title>Astro Basics</title>
+		<title>Kroma AI Pallete</title>
 	</head>
 	<body>
 		<slot />
@@ -25,12 +30,6 @@
 		--white: #ffffff;
 		--accent: #d6fb41;
 		--white-text: #f0f0f0;
-		--gray-text:rgb(163 163 163);
-		--black-text: #1d1d1d;
-		--accent-opacity: hsl(72, 72%, 56%, 28%);
-		--accent-hover: #f5ffcb;
-		--black-bg: #161616;
-		--gray-bg: #1d1d1d;
 	}
 	html {
 		font-size: 62.5%;
@@ -38,12 +37,13 @@
 	}
 
 	body {
-		font-family: 'Inter Variable', sans-serif;
+		font-family: "Inter Variable", sans-serif;
 		font-optical-sizing: auto;
-		font-weight: 300;
 		font-style: normal;
+		font-weight: normal;
+		font-display: swap;
 		color: var(--white-text);
-		background-color: #0E0E0E;
+		background-color: #0a0a0a;
 	}
 
 	h1,
@@ -60,11 +60,17 @@
 
 	a {
 		text-decoration: none;
-		color: #1d1d1d;
+		color: var(--white-text);
 	}
 	p {
 		font-size: 1.8rem;
 		font-weight: 400;
-		color: #C2C2C2;
+	}
+
+	button,
+	input,
+	select,
+	textarea {
+		font-family: inherit;
 	}
 </style>
